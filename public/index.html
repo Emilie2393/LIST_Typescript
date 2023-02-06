@@ -5,23 +5,20 @@
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="/dist/index.js" type="module"></script>
     <title>Snowpack App</title>
   </head>
   <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="/dist/index.js"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <h1>Une liste de tâches pour tous les jours</h1>
+    <div class="container">
+        <form class="newTask">
+            <input type="text" class="newTask__input" placeholder="Nouvelle tâche">
+            <div>Degré d'urgence : <input type="range" min="0" max="10" class="newTask__urg"></div>
+            <div>Degré d'importance : <input type="range"min="0" max="10" class="newTask__imp"></div>
+            <button type="submit">Ajouter</button>
+        </form>
+        <ul class="taskList"></ul>
+    </div>
   </body>
 </html>
