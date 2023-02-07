@@ -1,9 +1,9 @@
 # Une TO-DO list 
 
-clone ce repository -
-npm install
-npm start
-se connecter sur localhost:8080 et test l'application
+clone ce repository.
+npm install.
+npm start.
+se connecter sur localhost:8080 et test l'application.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # New Project
